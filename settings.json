@@ -1,0 +1,68 @@
+{
+  "breadcrumbs.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.renderWhitespace": "boundary",
+  "editor.tabSize": 2,
+  "files.exclude": {
+    "**/.git": false,
+    "**/.svn": false,
+    "**/.hg": false,
+    "**/.DS_Store": false
+  },
+  "git.autofetch": true,
+  "launch": {
+    "configurations": [
+      {
+        "type": "devtools-for-chrome",
+        "request": "launch",
+        "name": "Launch Chrome DevTools",
+        "file": "${workspaceFolder}/index.html"
+      },
+      {
+          "type": "devtools-for-chrome",
+          "request": "attach",
+          "name": "Attach Chrome DevTools",
+          "url": "http://localhost:8000/"
+      }
+    ]
+  },
+  "team.showWelcomeMessage": false,
+  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "vim.easymotion": true,
+  "vim.enableNeovim": true,
+  "vim.foldfix": true,
+  "vim.sneak": true,
+  "vim.incsearch": true,
+  "vim.neovimPath": "C:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-k>": false
+  },
+  "workbench.colorTheme": "Solarized Light",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.sideBar.location": "right",
+  "zenMode.restore": true
+}
