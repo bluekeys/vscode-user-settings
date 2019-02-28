@@ -1,0 +1,76 @@
+{
+    "ansible.customOptions": "--extra-vars '@passwd.yml' --vault-password-file ~/.vault_pass.txt",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+    "editor.renderWhitespace": "boundary",
+    "editor.snippetSuggestions": "top",
+    "editor.tabSize": 2,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "vue-html": "html",
+        "razor": "html",
+        "plaintext": "jade"
+    },
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.triggerExpansionOnTab": true,
+    "explorer.confirmDelete": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "vim.handleKeys": {
+        "<C-b>": false,
+        "<C-k>": false
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.editor.showTabs": true,
+    "editor.minimap.enabled": false,
+    "window.titleBarStyle": "custom",
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true
+    },
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [
+        {
+        "language": "vue",
+        "autoFix": true
+        },
+        {
+        "language": "html",
+        "autoFix": true
+        },
+        {
+        "language": "javascript",
+        "autoFix": true
+        }
+    ],
+    "vim.foldfix": true,
+    "vim.enableNeovim": true,
+    "vim.useSystemClipboard": true,
+    "workbench.colorTheme": "Monokai Dimmed",
+    "vsicons.dontShowNewVersionMessage": true,
+    "window.zoomLevel": 1,
+    "explorer.confirmDragAndDrop": false,
+    // Kubernetes configuration
+    "vs-kubernetes": {
+        "vs-kubernetes.namespace": "",
+        "vs-kubernetes.kubectl-path": "",
+        "vs-kubernetes.helm-path": "",
+        "vs-kubernetes.draft-path": "",
+        "vs-kubernetes.outputFormat": "yaml",
+        "vs-kubernetes.kubeconfig": "",
+        "vs-kubernetes.knownKubeconfigs": [],
+        "vs-kubernetes.autoCleanupOnDebugTerminate": false,
+        "vs-kubernetes.minikube-path": "/home/bluekeys/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
+    },
+    "vim.neovimPath": "/usr/bin/nvim",
+    "workbench.sideBar.location": "right",
+    "workbench.view.alwaysShowHeaderActions": true,
+    "breadcrumbs.enabled": true
+}
