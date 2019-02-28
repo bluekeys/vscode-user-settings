@@ -1,76 +1,145 @@
 {
-    "ansible.customOptions": "--extra-vars '@passwd.yml' --vault-password-file ~/.vault_pass.txt",
-    "editor.quickSuggestions": {
-        "other": true,
-        "comments": false,
-        "strings": false
+  "ansible.customOptions": "--extra-vars '@passwd.yml' --vault-password-file ~/.vault_pass.txt",
+  "breadcrumbs.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.minimap.enabled": false,
+  "editor.quickSuggestions": {
+    "comments": false,
+    "other": true,
+    "strings": false
+  },
+  "editor.renderWhitespace": "boundary",
+  "editor.snippetSuggestions": "top",
+  "editor.tabSize": 2,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "plaintext": "jade",
+    "razor": "html",
+    "vue-html": "html"
+  },
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    {
+      "autoFix": true,
+      "language": "vue"
     },
-    "editor.renderWhitespace": "boundary",
-    "editor.snippetSuggestions": "top",
-    "editor.tabSize": 2,
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact",
-        "vue-html": "html",
-        "razor": "html",
-        "plaintext": "jade"
+    {
+      "autoFix": true,
+      "language": "html"
     },
-    "emmet.showSuggestionsAsSnippets": true,
-    "emmet.triggerExpansionOnTab": true,
-    "explorer.confirmDelete": false,
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
-    "vim.handleKeys": {
-        "<C-b>": false,
-        "<C-k>": false
+    {
+      "autoFix": true,
+      "language": "javascript"
+    }
+  ],
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.exclude": {
+    "**/.DS_Store": false,
+    "**/.git": false,
+    "**/.hg": false,
+    "**/.svn": false
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true
+  },
+  "git.autofetch": true,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "launch": {
+    "configurations": [
+      {
+        "file": "${workspaceFolder}/index.html",
+        "name": "Launch Chrome DevTools",
+        "request": "launch",
+        "type": "devtools-for-chrome"
+      },
+      {
+        "name": "Attach Chrome DevTools",
+        "request": "attach",
+        "type": "devtools-for-chrome",
+        "url": "http://localhost:8000/"
+      }
+    ]
+  },
+  "team.showWelcomeMessage": false,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "vim.easymotion": true,
+  "vim.enableNeovim": true,
+  "vim.foldfix": true,
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-b>": false,
+    "<C-f>": false,
+    "<C-k>": false
+  },
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "after": [
+        "<Esc>"
+      ],
+      "before": [
+        "j",
+        "j"
+      ]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.neovimPath": "/usr/bin/nvim",
+  "vim.neovimPath": "C:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "after": [
+        "d",
+        "d"
+      ],
+      "before": [
+        "<leader>",
+        "d"
+      ]
     },
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.editor.showTabs": true,
-    "editor.minimap.enabled": false,
-    "window.titleBarStyle": "custom",
-    "files.watcherExclude": {
-        "**/.git/objects/**": true,
-        "**/.git/subtree-cache/**": true,
-        "**/node_modules/*/**": true
-    },
-    "vetur.format.defaultFormatter.js": "vscode-typescript",
-    "vetur.format.defaultFormatter.html": "js-beautify-html",
-    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-    "eslint.autoFixOnSave": true,
-    "eslint.validate": [
-        {
-        "language": "vue",
-        "autoFix": true
-        },
-        {
-        "language": "html",
-        "autoFix": true
-        },
-        {
-        "language": "javascript",
-        "autoFix": true
-        }
-    ],
-    "vim.foldfix": true,
-    "vim.enableNeovim": true,
-    "vim.useSystemClipboard": true,
-    "workbench.colorTheme": "Monokai Dimmed",
-    "vsicons.dontShowNewVersionMessage": true,
-    "window.zoomLevel": 1,
-    "explorer.confirmDragAndDrop": false,
-    // Kubernetes configuration
-    "vs-kubernetes": {
-        "vs-kubernetes.namespace": "",
-        "vs-kubernetes.kubectl-path": "",
-        "vs-kubernetes.helm-path": "",
-        "vs-kubernetes.draft-path": "",
-        "vs-kubernetes.outputFormat": "yaml",
-        "vs-kubernetes.kubeconfig": "",
-        "vs-kubernetes.knownKubeconfigs": [],
-        "vs-kubernetes.autoCleanupOnDebugTerminate": false,
-        "vs-kubernetes.minikube-path": "/home/bluekeys/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
-    },
-    "vim.neovimPath": "/usr/bin/nvim",
-    "workbench.sideBar.location": "right",
-    "workbench.view.alwaysShowHeaderActions": true,
-    "breadcrumbs.enabled": true
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    }
+  ],
+  "vim.sneak": true,
+  "vim.useCtrlKeys": true,
+  "vim.useSystemClipboard": true,
+  "vs-kubernetes": {
+    "vs-kubernetes.autoCleanupOnDebugTerminate": false,
+    "vs-kubernetes.draft-path": "",
+    "vs-kubernetes.helm-path": "",
+    "vs-kubernetes.knownKubeconfigs": [],
+    "vs-kubernetes.kubeconfig": "",
+    "vs-kubernetes.kubectl-path": "",
+    "vs-kubernetes.minikube-path": "/home/bluekeys/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+    "vs-kubernetes.namespace": "",
+    "vs-kubernetes.outputFormat": "yaml"
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "window.titleBarStyle": "custom",
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Solarized Light",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.showTabs": true,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.view.alwaysShowHeaderActions": true,
+  "zenMode.restore": true
 }
