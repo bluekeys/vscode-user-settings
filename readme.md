@@ -13,6 +13,7 @@
     git add .
     git commit -m "..."
     git push origin master
+    git branch --set-upstream-to=origin/master master
     
 
 ## Windows
